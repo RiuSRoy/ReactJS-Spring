@@ -6,7 +6,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 
 //@PreAuthorize("hasRole('ROLE_MANAGER')")
 public interface DoctorRepository extends MongoRepository<Doctor,String> {
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    //@PreAuthorize("hasAuthority('ADMIN')")
     @Override
     void delete(Doctor doctor);
 }
