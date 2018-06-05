@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.security.Principal;
 
-@Component
+//@Component
 public class CustomFilter implements Filter {
 
     @Override

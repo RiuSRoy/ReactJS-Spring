@@ -17,14 +17,14 @@ public class DoctorController {
     @Autowired
     private DoctorService doctorService;
 
-    @RequestMapping(value = "/doc")
+    /*@RequestMapping(value = "/doc")
     public String index(@AuthenticationPrincipal final UserDetails userDetails){
 
         Collection<? extends GrantedAuthority> authorities = userDetails.getAuthorities();
         authorities
                 .forEach(System.out::println);
         return "index";
-    }
+    }*/
 
     @RequestMapping(value = "/xdoc")
     public String index2(){
